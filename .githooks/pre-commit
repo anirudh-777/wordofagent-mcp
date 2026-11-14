@@ -1,0 +1,4 @@
+#!/bin/sh
+# Enable once per clone: git config core.hooksPath .githooks (needs gitleaks: brew install gitleaks).
+command -v gitleaks >/dev/null || { echo "Install gitleaks first (brew install gitleaks): it checks every commit for secrets." >&2; exit 1; }
+exec sh ./check.sh --staged

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "wordofagent",
+  "version": "1.0.0",
+  "description": "Checks if search engines and AI assistants can find, read and recommend a site, and what to change.",
+  "author": {
+    "name": "Word of Agent",
+    "email": "support@wordofagent.app",
+    "url": "https://wordofagent.app"
+  },
+  "homepage": "https://wordofagent.app/connector",
+  "keywords": [
+    "seo",
+    "ai search",
+    "visibility",
+    "small business",
+    "marketing"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Word of Agent",
+        "shortDescription": "Get found by search and AI",
+        "longDescription": "Word of Agent measures whether search engines and AI assistants can find, read and recommend a business, and says what to change. Connected to ChatGPT, it gives ChatGPT the measurements and the work: audits of the website (crawler access, indexing, rendering, structured data, the facts it states, listings and reviews), the business's customers' questions asked the way a customer would ask them, why assistants name others instead, a main channel chosen from evidence, pages to write and places to get mentioned.\n\nChatGPT fixes and drafts; you approve anything sent in your name; Word of Agent checks the result. It calls no AI model itself, sends nothing on its own, and an assistant cannot approve its own drafts: only a person signed in to Word of Agent can.\n\nYou need a Word of Agent account (sign in with Google or an email link at wordofagent.app). Only the sites in your account are shown.",
+        "developerName": "Word of Agent",
+        "category": "Business",
+        "websiteURL": "https://wordofagent.app/connector",
+        "supportURL": "https://wordofagent.app/connector",
+        "privacyPolicyURL": "https://wordofagent.app/privacy",
+        "termsOfServiceURL": "https://wordofagent.app/terms",
+        "defaultPrompt": [
+          "Why don't AI assistants recommend my site, and what should we fix first?",
+          "Work through my Word of Agent to do list, most costly first.",
+          "What's my main channel this month, and what are the first three things to do?"
+        ],
+        "brandColor": "#1D3A8A",
+        "brandColorDark": "#97ADF2",
+        "logo": "./assets/logo.png"
+      },
+      "publication": {
+        "release_notes": "First release: audits, the customers' questions answered by ChatGPT, the to do list, the channel plan and outreach drafts for approval."
+      }
+    }
+  }
+}
